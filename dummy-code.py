@@ -16,10 +16,10 @@ class User:
     name: str
     roles: List[str] = field(default_factory=list)
 
-    def add_role(self, role: str) -> None:
-        if role not in self.roles:
-            self.roles.append(role)
-            logger.debug("Added role %s to %s", role, self.name)
+    def add_role(self, ro: str) -> None:
+        if ro not in self.roles:
+            self.roles.append(ro)
+            logger.debug("Added role %s to %s", ro, self.name)
 
     def remove_role(self, role: str) -> None:
         if role in self.roles:
