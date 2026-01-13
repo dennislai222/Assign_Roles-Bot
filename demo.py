@@ -1,3 +1,3 @@
 def f():
-    assert True
+    assert True     #
     return 1
